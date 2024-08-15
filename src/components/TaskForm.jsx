@@ -40,7 +40,7 @@ const TaskForm = ({ setTasks }) => {
 
   return (
     <div className="py-2 border-b border-gray-300">
-      <h1 className="text-5xl font-serif py-5 font-bold text-center">Drag and Drop Assignment</h1>
+      <h1 className="text-5xl font-serif py-5 font-bold text-center text-indigo-500">Drag and Drop Assignment</h1>
       <header className="flex items-center justify-center  py-6">
         <form onSubmit={handleSubmit}>
           <input
