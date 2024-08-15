@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Tag from "./Tag";
-
+import { FaHandPointRight } from "react-icons/fa";
 const TaskForm = ({ setTasks }) => {
   const [taskData, setTaskData] = useState({
     task: "",
@@ -60,10 +60,26 @@ const TaskForm = ({ setTasks }) => {
           />
           <div className="flex items-center justify-between mb-4">
             <div className="flex gap-2">
-              <Tag tagName="HTML" selectTag={selectTag} selected={checkTag("HTML")} />
-              <Tag tagName="CSS" selectTag={selectTag} selected={checkTag("CSS")} />
-              <Tag tagName="JavaScript" selectTag={selectTag} selected={checkTag("JavaScript")} />
-              <Tag tagName="React" selectTag={selectTag} selected={checkTag("React")} />
+              <Tag
+                tagName="HTML"
+                selectTag={selectTag}
+                selected={checkTag("HTML")}
+              />
+              <Tag
+                tagName="CSS"
+                selectTag={selectTag}
+                selected={checkTag("CSS")}
+              />
+              <Tag
+                tagName="JavaScript"
+                selectTag={selectTag}
+                selected={checkTag("JavaScript")}
+              />
+              <Tag
+                tagName="React"
+                selectTag={selectTag}
+                selected={checkTag("React")}
+              />
             </div>
             <div className="flex items-center gap-2">
               <select
@@ -86,7 +102,21 @@ const TaskForm = ({ setTasks }) => {
           </div>
         </form>
       </header>
-        <p className=" text-center mb-10"><a className="text-blue-500 " href="https://docs.google.com/document/d/1Y77qjmYKKHOGb02shab0DGHYK78xLBI2t1VSHmxLEVQ/edit?usp=sharing">Drag and Drop Assignment Documentation Here</a></p>
+      <div className="py-5 my-10 flex justify-center items-center gap-x-4 ">
+        <div>
+          <FaHandPointRight size={25} className="inline-block my-auto"/>
+        </div>
+        <div>
+          <p className=" text-center mb-10">
+            <a
+              className="text-blue-500 "
+              href="https://docs.google.com/document/d/1Y77qjmYKKHOGb02shab0DGHYK78xLBI2t1VSHmxLEVQ/edit?usp=sharing"
+            >
+              Drag and Drop Assignment Documentation Here
+            </a>
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
