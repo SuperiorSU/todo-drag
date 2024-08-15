@@ -31,8 +31,9 @@ const App = () => {
   };
 
   return (
-    <div className="grid grid-rows-[230px_auto] p-2">
+    <div className="grid p-2">
       <TaskForm setTasks={setTasks} />
+      
       <main className="flex justify-around p-5 gap-3 px-[8%]">
         <TaskColumn
           title="To do"
