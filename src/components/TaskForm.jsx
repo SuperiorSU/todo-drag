@@ -9,10 +9,7 @@ const TaskForm = ({ setTasks }) => {
     tags: [],
   });
 
-  // Function to check if a tag is selected
   const checkTag = (tag) => taskData.tags.includes(tag);
-
-  // Function to toggle tag selection
   const selectTag = (tag) => {
     setTaskData((prev) => {
       const newTags = prev.tags.includes(tag)
