@@ -39,8 +39,8 @@ const TaskForm = ({ setTasks }) => {
   };
 
   return (
-    <div className="py-2">
-      <header className="flex items-center justify-center border-b border-gray-300 py-6">
+    <div className="py-2 border-b border-gray-300">
+      <header className="flex items-center justify-center  py-6">
         <form onSubmit={handleSubmit}>
           <input
             type="text"
@@ -86,6 +86,7 @@ const TaskForm = ({ setTasks }) => {
           </div>
         </form>
       </header>
+        <p className=" text-center mb-10"><a className="text-blue-500 " href="https://docs.google.com/document/d/1Y77qjmYKKHOGb02shab0DGHYK78xLBI2t1VSHmxLEVQ/edit?usp=sharing">Drag and Drop Assignment Documentation Here</a></p>
     </div>
   );
 };
